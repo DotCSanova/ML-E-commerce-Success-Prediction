@@ -1,0 +1,26 @@
+[project]
+name = "ml-ecommerce-success"
+version = "0.1.0"
+description = "ML project to predict e-commerce success."
+authors = ["DotCSanova <your.email@example.com>"]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "jupyter",
+    "black",
+    "isort",
+    "mypy"
+]
+
+[project.dependencies]
+pandas = "*"
+numpy = "*"
+scikit-learn = "*"
+fastapi = "*"
+uvicorn = "*"
